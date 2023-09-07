@@ -15,12 +15,10 @@ use App\Http\Controllers\PerpustakaanController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/buku', function () {
-    return view('welcome');
+
+Route::get('/', function () {
+    return view('layouts.master');
 });
 
 Route::get('/buku', [PerpustakaanController::class,'buku'])
