@@ -4,6 +4,6 @@
       Anything you want
   </div>
   <!-- Default to the left -->
-  <strong>Copyright &copy; 2023 <a href="https://www.instagram.com/qu_qiss/">Suci nofia fitriani</a>.</strong> All rights
+  <strong>Copyright &copy; 2023 <a href="https://adminlte.io">Suci nofia fitriani</a>.</strong> All rights
   reserved.
 </footer>
