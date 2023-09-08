@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PerpustakaanController;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,17 +14,12 @@ use App\Http\Controllers\PerpustakaanController;
 |
 */
 
-
-
 Route::get('/', function () {
-    return view('layouts.master');
-});
+    return view('welcome');
+})->name('dashboard');
 
-Route::get('/buku', [PerpustakaanController::class,'buku'])
-->name('get_buku');
+Route::get('/anggota', [PerpustakaanController::class, 'anggota'])->name('get_anggota');
 
-Route::get('/petugas', [PerpustakaanController::class,'petugas'])
-->name('get_petugas');
+Route::get('/buku', [PerpustakaanController::class, 'buku'])->name('get_buku');
 
-Route::get('/anggota', [PerpustakaanController::class,'anggota'])
-->name('get_anggota');
+Route::get('/petugas', [PerpustakaanController::class, 'petugas'])->name('get_petugas');
