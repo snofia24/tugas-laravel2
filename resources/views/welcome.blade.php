@@ -11,7 +11,7 @@
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
+                                <li class="breadcrumb-item"><a href="">Home</a></li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -34,7 +34,7 @@
                                     <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
 
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, sequi?</p>
-                                    <a href="{{ route('get_anggota') }}" class="btn btn-primary">Click me</a>
+                                    <a href="" class="btn btn-primary">Click me</a>
                                 </div>
                             </div>
 
@@ -45,7 +45,7 @@
                                 <div class="card-body">
                                     <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
                                     <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, asperiores!</p>
-                                    <a href="{{ route('get_buku') }}" class="btn btn-primary">Click me</a>
+                                    <a href="" class="btn btn-primary">Click me</a>
                                 </div>
                             </div>
                             
@@ -56,7 +56,7 @@
                                 <div class="card-body">
                                     <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
                                     <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, asperiores!</p>
-                                    <a href="{{ route('get_petugas') }}" class="btn btn-primary">Click me</a>
+                                    <a href="" class="btn btn-primary">Click me</a>
                                 </div>
                             </div>
                         </div>

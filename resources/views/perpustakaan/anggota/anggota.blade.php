@@ -31,46 +31,47 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form>
+                        <form action="{{route('anggota.store')}}" method="POST">
+                            @csrf 
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="id">ID Anggota</label>
-                                    <input type="text" class="form-control" id="id" placeholder="Masukkan ID">
+                                    <input name="id" type="text" class="form-control" id="id" placeholder="Masukkan ID">
                                 </div>
                                 <div class="form-group">
                                     <label for="kode_anggota">Kode Anggota</label>
-                                    <input type="text" class="form-control" id="kode_anggota"
+                                    <input name="kode" type="text" class="form-control" id="kode_anggota"
                                         placeholder="Masukan kode">
                                 </div>
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
-                                    <input type="text" class="form-control" id="nama"
+                                    <input name="nama" type="text" class="form-control" id="nama"
                                         placeholder="Masukan nama">
                                 </div>
                                 <div class="form-group">
                                     <label for="jk">Jenis Kelamin</label>
                                     <div class="custom-control custom-radio">
-                                        <input class="custom-control-input" type="radio" id="p"
+                                        <input value="L" class="custom-control-input" type="radio" id="l"
                                             name="jk">
-                                        <label for="p" class="custom-control-label">Laki-laki</label>
+                                        <label for="l" class="custom-control-label">Laki-laki</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input class="custom-control-input" type="radio" id="l"
+                                        <input value="P" class="custom-control-input" type="radio" id="p"
                                             name="jk">
-                                        <label for="l" class="custom-control-label">Perempuan</label>
+                                        <label for="p" class="custom-control-label">Perempuan</label>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label>Jurusan</label>
-                                    <select class="custom-select">
+                                    <select name="jurusan" class="custom-select">
                                         <option selected disabled>Pilih Jurusan</option>
-                                        <option>RPL</option>
-                                        <option>DPIB</option>
-                                        <option>TP</option>
-                                        <option>TFLM</option>
-                                        <option>TEI</option>
-                                        <option>TITL</option>
-                                        <option>TKJ</option>
+                                        <option value="RPL" >RPL</option>
+                                        <option value="DPIB" >DPIB</option>
+                                        <option value="TP" >TP</option>
+                                        <option value="TFLM" >TFLM</option>
+                                        <option value="TEI" >TEI</option>
+                                        <option value="TITL" >TITL</option>
+                                        <option value="TKJ" >TKJ</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -79,13 +80,13 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                         </div>
-                                        <input type="number" class="form-control"
+                                        <input name="no_telp" type="number" class="form-control"
                                             data-inputmask='"mask": "(999) 999-9999"' data-mask placeholder="Masukan angka">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                         <label>Alamat</label>
-                                        <textarea class="form-control" rows="3" placeholder="Masukan alamat"></textarea>
+                                        <textarea name="alamat" class="form-control" rows="3" placeholder="Masukan alamat"></textarea>
                                     </div>
                             </div>
                             <div class="card-footer">
