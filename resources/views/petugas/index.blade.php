@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
 @endpush
 
-
 <!-- Main content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -62,11 +61,15 @@
                                     <td>{{ $value->jabatan_petugas }}</td>
                                     <td>{{ $value->no_telp_petugas }}</td>
                                     <td>{{ $value->alamat_petugas }}</td>
-
                                     <td>
-                                        <a href="" class="btn-sm btn-info">Show</a>
-                                        <a href="" class="btn-sm btn-warning">Edit</a>
-                                        <a href="" class="btn-sm btn-danger">Delete</a>
+                                        <form action="{{ route('petugas.destroy', $value->id) }}"
+                                            method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                        <a href="{{ route('petugas.show', $value->id)}}" class="btn-sm btn-info">Show</a>
+                                        <a href="{{ route('petugas.edit', $value->id)}}" class="btn-sm btn-warning">Edit</a>
+                                        <button class="btn-sm btn-danger">Delete</a>
+                                        </form>
                                     </td>
                                 </tr>
 

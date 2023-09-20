@@ -66,9 +66,14 @@
                                     <td>{{ $value->no }}</td>
                                     <td>{{ $value->alamat }}</td>
                                     <td>
-                                        <a href="" class="btn-sm btn-info">Show</a>
-                                        <a href="" class="btn-sm btn-warning">Edit</a>
-                                        <a href="" class="btn-sm btn-danger">Delete</a>
+                                        <form action="{{ route('anggota.destroy', $value->id) }}"
+                                            method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                        <a href="{{ route('anggota.show', $value->id)}}" class="btn-sm btn-info">Show</a>
+                                        <a href="{{ route('anggota.edit', $value->id)}}" class="btn-sm btn-warning">Edit</a>
+                                        <button class="btn-sm btn-danger">Delete</a>
+                                        </form>
                                     </td>
                                 </tr>
 

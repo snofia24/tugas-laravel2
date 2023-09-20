@@ -66,9 +66,14 @@
                                     <td>{{ $value->tahun_penerbit }}</td>
                                     <td>{{ $value->stok }}</td>
                                     <td>
-                                        <a href="" class="btn-sm btn-info">Show</a>
-                                        <a href="" class="btn-sm btn-warning">Edit</a>
-                                        <a href="" class="btn-sm btn-danger">Delete</a>
+                                        <form action="{{ route('buku.destroy', $value->id) }}"
+                                            method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                        <a href="{{ route('buku.show', $value->id)}}" class="btn-sm btn-info">Show</a>
+                                        <a href="{{ route('buku.edit', $value->id)}}" class="btn-sm btn-warning">Edit</a>
+                                        <button class="btn-sm btn-danger">Delete</a>
+                                        </form>
                                     </td>
                                 </tr>
 
