@@ -34,7 +34,7 @@
                                     <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
 
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, sequi?</p>
-                                    <a href="" class="btn btn-primary">Click me</a>
+                                    <a href="/anggota" class="btn btn-primary">Click me</a>
                                 </div>
                             </div>
 
@@ -45,7 +45,7 @@
                                 <div class="card-body">
                                     <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
                                     <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, asperiores!</p>
-                                    <a href="" class="btn btn-primary">Click me</a>
+                                    <a href="/buku" class="btn btn-primary">Click me</a>
                                 </div>
                             </div>
                             
@@ -56,7 +56,7 @@
                                 <div class="card-body">
                                     <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
                                     <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, asperiores!</p>
-                                    <a href="" class="btn btn-primary">Click me</a>
+                                    <a href="/petugas" class="btn btn-primary">Click me</a>
                                 </div>
                             </div>
                         </div>

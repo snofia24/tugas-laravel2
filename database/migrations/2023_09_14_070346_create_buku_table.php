@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('buku', function (Blueprint $table) {
             $table->id();
-            $table->char('kode_buku',100);
-            $table->string('judul_buku',100);
-            $table->string('penulis_buku',100);
-            $table->string('penerbit_buku',100);
+            $table->char('kode',100);
+            $table->string('judul',100);
+            $table->string('penulis',100);
+            $table->string('penerbit',100);
             $table->char('tahun_penerbit',100);
             $table->integer('stok');
             $table->timestamps();

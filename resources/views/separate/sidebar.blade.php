@@ -28,7 +28,7 @@
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                 <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="/" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="/anggota/create" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Data Anggota
@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="/buku/create" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Data Buku
@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="/petugas/create" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Data Petugas

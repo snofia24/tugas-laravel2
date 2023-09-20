@@ -1,6 +1,6 @@
 @extends('layouts.master')
-@section('title','anggota')
-@section('content') 
+@section('title', 'anggota')
+@section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -31,47 +31,40 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form action="{{route('anggota.store')}}" method="POST">
-                            @csrf 
+                        <form action="{{ route('anggota.store')}}" method="post">
+                            @csrf
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="id">ID Anggota</label>
-                                    <input name="id" type="text" class="form-control" id="id" placeholder="Masukkan ID">
+                                    <input type="text" class="form-control" name="id" id="id" placeholder="Masukkan ID">
                                 </div>
                                 <div class="form-group">
                                     <label for="kode_anggota">Kode Anggota</label>
-                                    <input name="kode" type="text" class="form-control" id="kode_anggota"
-                                        placeholder="Masukan kode">
+                                    <input type="text" class="form-control" name="kode" id="kode" placeholder="Masukan kode">
                                 </div>
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
-                                    <input name="nama" type="text" class="form-control" id="nama"
-                                        placeholder="Masukan nama">
+                                    <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukan nama">
                                 </div>
                                 <div class="form-group">
                                     <label for="jk">Jenis Kelamin</label>
-                                    <div class="custom-control custom-radio">
-                                        <input value="L" class="custom-control-input" type="radio" id="l"
-                                            name="jk">
-                                        <label for="l" class="custom-control-label">Laki-laki</label>
-                                    </div>
-                                    <div class="custom-control custom-radio">
-                                        <input value="P" class="custom-control-input" type="radio" id="p"
-                                            name="jk">
-                                        <label for="p" class="custom-control-label">Perempuan</label>
-                                    </div>
+                                    <select class="custom-select" name="jk">
+                                        <option selected disabled></option>
+                                        <option>LAKI-LAKI</option>
+                                        <option>PERUMPUAN</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label>Jurusan</label>
-                                    <select name="jurusan" class="custom-select">
+                                    <select class="custom-select" name="jurusan">
                                         <option selected disabled>Pilih Jurusan</option>
-                                        <option value="RPL" >RPL</option>
-                                        <option value="DPIB" >DPIB</option>
-                                        <option value="TP" >TP</option>
-                                        <option value="TFLM" >TFLM</option>
-                                        <option value="TEI" >TEI</option>
-                                        <option value="TITL" >TITL</option>
-                                        <option value="TKJ" >TKJ</option>
+                                        <option>RPL</option>
+                                        <option>DPIB</option>
+                                        <option>TP</option>
+                                        <option>TFLM</option>
+                                        <option>TEI</option>
+                                        <option>TITL</option>
+                                        <option>TKJ</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -80,19 +73,18 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                         </div>
-                                        <input name="no_telp" type="number" class="form-control"
-                                            data-inputmask='"mask": "(999) 999-9999"' data-mask placeholder="Masukan angka">
+                                        <input type="number" class="form-control" name="no" data-inputmask='"mask": "(999) 999-9999"' data-mask placeholder="Masukan angka">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                        <label>Alamat</label>
-                                        <textarea name="alamat" class="form-control" rows="3" placeholder="Masukan alamat"></textarea>
-                                    </div>
+                                    <label>Alamat</label>
+                                    <textarea class="form-control" rows="3" name="alamat" placeholder="Masukan alamat"></textarea>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                             <!-- /.content -->
                         </form>
-                    </div> 
-@endsection
+                    </div>
+                    @endsection
