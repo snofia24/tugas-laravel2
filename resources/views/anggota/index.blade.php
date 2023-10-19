@@ -1,8 +1,5 @@
 @extends('layouts.master')
-
 @section('title', 'Data anggota')
-
-
 @section('content')
 
 @push('css')
@@ -10,7 +7,6 @@
 <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
 <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
 @endpush
-
 
 <!-- Main content -->
 <div class="content-wrapper">
@@ -40,7 +36,8 @@
                             <h3 class="card-title">Table Data anggota</h3>
                         </div>
                         <!-- /.card-header -->
-                        <table class="table table-head-fixed text-nowrap">
+                        <table class="card-header">
+                            <table id="example2" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
                                     <th>No</th>

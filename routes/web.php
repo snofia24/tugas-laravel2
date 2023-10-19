@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AnggotaController;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\PetugasController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\RakController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +34,20 @@ Route::resource('/anggota', AnggotaController::class);
 Route::resource('/buku', BukuController::class);
 
 Route::resource('/petugas', PetugasController::class);
+
+Route::resource('/rak', RakController::class);
+
+Route::controller(AuthController::class)->group(function() {
+    // register form
+    Route::get('/register', 'register')->name('auth.register');
+    // store register
+    Route::post('/register', 'store')->name('auth.store');
+    // login form
+    Route::get('/login', 'login')->name('auth.login');
+    // auth proses
+    Route::post('/auth', 'auth')->name('auth.authentication');
+    // logout
+    Route::post('/logout', 'logout')->name('auth.logout');
+    // dashboard page
+    Route::get('/dashboard', 'dashboard')->name('dashboard');
+});

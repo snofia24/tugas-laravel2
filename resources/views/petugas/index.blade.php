@@ -39,7 +39,8 @@
                             <h3 class="card-title">Table Data petugas</h3>
                         </div>
                         <!-- /.card-header -->
-                        <table class="table table-head-fixed text-nowrap">
+                        <table class="card-header">
+                            <table id="example2" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
                                     <th>No</th>
